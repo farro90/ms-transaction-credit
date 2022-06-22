@@ -13,7 +13,9 @@ import reactor.core.publisher.Mono;
 @Service
 public class ServiceWCImpl implements IServiceWC {
 
-    private static final String URL_GATEWAY = "${my.property.URL_GATEWAY}";
+    //private static final String URL_GATEWAY = "${my.property.URL_GATEWAY}";
+
+    private static final String URL_GATEWAY = "http://localhost:8080";
 
     @Autowired
     private WebClient.Builder webClient;
